@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  background-image: url("./cmd.gif");
+  background-image: url("/cmd.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -22,7 +22,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, 0.85);
+  padding-bottom:45px;
 }
 
 header {
@@ -32,28 +33,17 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid #4444;
+  border-bottom: 1px solid #555;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.logo {
+.logo a {
   font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-.searchBar {
-  flex: 1;
-  margin: 0 24px;
-  display: none;
-}
-
-.searchInput {
-  width: 100%;
-  padding: 8px 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
 
 nav {
   display: none;
@@ -125,6 +115,7 @@ nav a:hover {
   font-weight: bold;
   width: 33%;
   margin: 50px auto;
+  text-shadow: 1px 1px 1px #000, 0 0 1px white, 0 0 25px black;
 }
 
 .landing-page-header span {
@@ -148,21 +139,21 @@ nav a:hover {
 .landing-page-buttons a {
   text-decoration: none;
   padding: 12px 24px;
-  border-radius: 8px;
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+  border: 1px solid white;
 }
 .landing-page-buttons a.primary {
-  background-color: #2563eb; /* Blue */
+  background-color: rgba(37, 99, 235, 0.5); /* Blue with opacity */
   color: white;
 }
 .landing-page-buttons a.primary:hover {
   background-color: #1d4ed8; /* Darker blue */
 }
 .landing-page-buttons a.secondary {
-  background-color: #f3f4f6; /* Light gray */
-  color: #374151; /* Dark gray */
+  background-color: rgba(255, 255, 255, 0.5); /* Light gray */
+  color: #fff;
 }
 .landing-page-buttons a.secondary:hover {
   background-color: #e5e7eb; /* Slightly darker gray */
@@ -175,4 +166,54 @@ nav a:hover {
   justify-content: center;
   gap: 40px;
   margin-top: 40px;
+}
+
+.link-list {
+  margin: 30px 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.link-list li {
+  counter-increment: step-counter;
+  margin-bottom: 15px;
+  width:30vw;
+
+}
+.link-list li::before {
+  content: counter(step-counter);
+  margin-right: 20px;
+  font-size: 80%;
+  color: white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 11px;
+}
+
+.link-list li a {
+  color: white; /* Dark gray */
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+  padding: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+  width:80%;
+}
+
+.link-list li a:hover {
+  color: #ddd; /* Darker blue */
+  background: blue;
+}
+
+article {
+  max-width: 680px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  color: #444;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
