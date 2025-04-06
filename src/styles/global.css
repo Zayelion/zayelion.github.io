@@ -2,9 +2,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+	sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: #000;
   color: #374151;
+  overflow:auto;
 }
 
 html {
@@ -23,7 +25,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
-  padding-bottom:45px;
+  padding-bottom: 45px;
 }
 
 header {
@@ -34,7 +36,7 @@ header {
   justify-content: space-between;
   position: relative;
   border-bottom: 1px solid #555;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(12, 12, 12, 0.9);
 }
 
 .logo a {
@@ -43,7 +45,6 @@ header {
   text-decoration: none;
   color: white;
 }
-
 
 nav {
   display: none;
@@ -106,6 +107,38 @@ nav a:hover {
     display: none;
   }
 }
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(12, 12, 12, 0.9);
+	border-top: 1px solid #555;
+	color: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+				0 1px 2px rgba(0, 0, 0, 0.06);
+	z-index: 50;
+  }
+  
+  .footer-content {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0.75rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer-link {
+	color: #63b3ed; /* Tailwind's blue-400 */
+	text-decoration: none;
+	font-weight: 500;
+  }
+  
+  .footer-link:hover {
+	text-decoration: underline;
+  }
 
 .landing-page-header {
   text-align: center;
@@ -178,8 +211,7 @@ nav a:hover {
 .link-list li {
   counter-increment: step-counter;
   margin-bottom: 15px;
-  width:30vw;
-
+  width: 30vw;
 }
 .link-list li::before {
   content: counter(step-counter);
@@ -200,7 +232,17 @@ nav a:hover {
   padding: 16px;
   margin-bottom: 8px;
   display: inline-block;
-  width:80%;
+  width: 80%;
+}
+
+.all-link {
+	text-decoration: none;
+	color: white; /* Dark gray */
+	width:20%;
+	text-align: center;
+	clear: both;
+	margin: 20px auto;
+	display: block;
 }
 
 .link-list li a:hover {
@@ -214,6 +256,6 @@ article {
   padding: 20px;
   background-color: white;
   color: #444;
-  
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

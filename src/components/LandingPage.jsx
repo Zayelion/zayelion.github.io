@@ -24,12 +24,11 @@ export default function LandingPage() {
           About the Angel of Code
         </a>
       </div>
+      <a class="all-link" href='/lessons/'>All Lessons</a>
       <div class="landing-page-features">
-       
+      
         <ol className='link-list'>
-        <li key="all-lessons">
-              <a href='/lessons/'>All Lessons</a>
-            </li>
+
           {lessonList.map((lesson) => (
             <li key={lesson.path}>
               <a href={lesson.path}>{lesson.title}</a>
