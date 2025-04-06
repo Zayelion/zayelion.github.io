@@ -233,6 +233,7 @@ nav a:hover {
   margin-bottom: 8px;
   display: inline-block;
   width: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Lighten on hover */
 }
 
 .all-link {
@@ -247,7 +248,8 @@ nav a:hover {
 
 .link-list li a:hover {
   color: #ddd; /* Darker blue */
-  background: blue;
+  background: black;
+  
 }
 
 article {
