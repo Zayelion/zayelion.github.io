@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import '../styles/global.css'
 
 
-function LandingPage() {
+function Header() {
   const navLinks = [
     { text: "Home", href: "/" },
     { text: "About", href: "/about" },
@@ -81,4 +81,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Header;
