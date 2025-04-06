@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import '../styles/global.css'
 
+
 function LandingPage() {
   const navLinks = [
     { text: "Home", href: "/" },
@@ -13,10 +14,8 @@ function LandingPage() {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  
-
   return (
-    <header className="bg-white shadow-md px-4 py-3 flex items-center justify-between">   
+    <header className="header">   
     
        {/* Desktop Nav */}
     <nav className="hidden md:flex space-x-6 items-center">
@@ -32,7 +31,7 @@ function LandingPage() {
     </nav>
       {/* Logo */}
       <div className="text-xl font-bold">
-        <a href="/"></a>
+        <a href="/">Angel of Code</a>
       </div>
 
       {/* Search Bar */}
