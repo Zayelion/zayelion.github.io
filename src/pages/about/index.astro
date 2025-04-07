@@ -1,16 +1,20 @@
 ---
-import Header from '../../components/Header.jsx';
-import Footer from '../../components/Footer.jsx';
-import '../../styles/global.css'; // Import global styles
+import Header from "../../components/Header.jsx";
+import Footer from "../../components/Footer.jsx";
+import "../../styles/global.css"; // Import global styles
+import { AnalyticsProvider } from "../../hooks/useAnalytics";
 ---
+
 <html>
   <head>
-     <title>Meet the Angel of Code</title>
-     <meta charSet="UTF-8"/>
+    <title>Meet the Angel of Code</title>
+    <meta charSet="UTF-8" />
   </head>
   <body>
-    <div class="background-cover"></div>
-    <Header />
-    <Footer />
+    <AnalyticsProvider client:load>
+      <div class="background-cover"></div>
+      <Header />
+      <Footer />
+    </AnalyticsProvider>
   </body>
 </html>

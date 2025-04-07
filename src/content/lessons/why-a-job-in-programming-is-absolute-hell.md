@@ -21,7 +21,7 @@ Then check out this video.
 
 
 
-## The Myth of Quality Code
+<!-- ## The Myth of Quality Code
 The first truth you need to learn is that quality code is rare. Like unicorns, everyone talks about it, but few have actually seen it. In the real world, most codebases are an accretion of patches, shortcuts, misunderstandings, and last-minute fixes. It’s code that barely functions, but functions just enough to limp into production. And once it’s there? It stays there—regardless of how awful it is underneath.
 
 Why? Because it worked once. And in this field, “it worked once” often becomes “don’t touch it.”
@@ -63,7 +63,7 @@ Just understand this: the journey is messy. The code will break. People will fru
 
 Do the best you can with what you have. Don’t let perfect be the enemy of good enough.
 
-And most of all—cast your spells wisely.
+And most of all—cast your spells wisely. -->
 
 
 
